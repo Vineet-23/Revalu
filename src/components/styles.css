@@ -1,0 +1,447 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  font-size: small;
+}
+
+.content {
+  display: flex;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: center; /* Center the header content */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  font-size: 11px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.header nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header nav li {
+  margin-right: 20px;
+}
+
+.header nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+
+.logo {
+  width: 20px;
+  height: 20px;
+  border-radius: 10%;
+  /* background-color: #ccc; */
+  position: absolute;
+  top: 5px; /*Adjust top and right values to position the profile pictures */
+  left: 26px; 
+}
+
+.user-profile {
+  width: 20px;
+  height: 20px;
+  border-radius: 10%;
+  background-color: #ccc;
+  position: absolute;
+  top: 5px; /* Adjust top and right values to position the profile pictures */
+}
+.right-corner {
+  right: 20px;
+}
+
+/* Main Styles */
+.main {
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+
+/* .mainbox {
+  
+  background-color: #f5f5f5;
+  padding: 10px 10px;
+  border-radius: 20px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  */
+
+
+
+/* Modify collection-item styles */
+.collection {
+  display: flex;
+  align-items: baseline;
+ 
+  }
+
+.collection h6 {
+  margin-left: 15px; /* Add some space between folder icon and collection name */
+}
+
+.newcollection {
+  display: flex;
+  align-items: center;
+  margin-top: -25px;
+  margin-bottom: -20px; /* Adjust the margin bottom to reduce gap */
+}
+
+
+.collection-item {
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 150px;
+}
+
+.collection-item h5 {
+  margin-top: 0;
+}
+
+ .collection-item p {
+  margin-bottom: 10px;
+} 
+
+.collection-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  border-radius: 20px;
+  
+}
+
+.collection-details {
+  padding: 1px 5px; /* Reduced bottom padding */
+}
+
+.collection-details h4 {
+  margin-top: 10px; /* Remove top margin from heading */
+  margin-bottom: 0px; /* Reduced bottom margin for heading */
+}
+
+.collection-details p {
+  margin-top: 10px; /* Remove top margin from description */
+  margin-bottom: 0px; /* Reduced bottom margin for description */
+  font-size: 15px;
+}
+
+.count-number {
+font-weight: bold;
+font-size: 10px;
+margin-left: 150px;
+
+}
+/* new collection style */
+.new-collection-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.new-collection-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.new-collection-form h2 {
+  margin-top: 0;
+}
+
+.new-collection-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.new-collection-form input,
+.new-collection-form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.form-actions button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.empty-collection-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px; /* Adjust the height as needed */
+}
+
+/* delete confirmation style */
+.delete-confirmation-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.confirmation-message {
+  margin-bottom: 20px;
+}
+
+.confirmation-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirmation-buttons button {
+  margin-top: 10px;
+  padding: 8px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.confirmation-buttons .confirm-btn {
+  background-color: purple;
+  color: #fff;
+}
+
+.confirmation-buttons .cancel-btn {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Sidebar Styles */
+
+.sidebar {
+  background-color: #f5f5f5; 
+  padding: 10px;
+  /* padding-bottom: 0; */
+  /* flex-grow: 1 0px; */
+  width: 200px;
+  margin-left: 20px;
+  
+}
+
+.box {
+  border: 1px solid #ccc;
+  border-radius: 10px; 
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.sidebar-header {
+  margin-bottom: 20px;
+}
+.divider {
+  border: none;
+  border-top: 2px solid #ccc; 
+  margin: 20px 2px; 
+}
+/* .sidebar-header h {
+  margin: 0;
+} */
+
+/* .sidebar-header button {
+  margin-left: 10px;
+} */
+
+
+
+/* .collection-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.collection-item {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  padding: 1px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.collection-item h4 {
+  margin-top: 0;
+}
+
+.collection-item p {
+  margin-bottom: 10px;
+} */
+
+
+/* .left-corner {
+  left: 30px;
+} */
+
+
+
+/* 
+.collection-item {
+  position: relative;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  padding: 5px 10px;
+}
+
+.download-data {
+  background-color: #f5f5f5;
+  color: black;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: x-small;
+
+} */
+/* Modify top-bar styles */
+
+/* my component box style */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  /* background-color: #f5f5f5; */
+  border-radius: 10px 10px 0 0;
+  font-size: 10px;
+}
+
+.download-data {
+  background-color: #f5f5f5; /* Same background color as before */
+  color: #333; /* Same text color as before */
+  padding: 5px; /* Add padding */
+  border-radius: 10px; /* Remove border radius */
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.download-data svg {
+  margin-left: 5px;
+  
+}
+.delete-btn button {
+  background-color: transparent; /* Remove background color */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+}
+
+.delete-btn button svg {
+  font-size: 18px; /* Adjust icon size if needed */
+  color: black; /* Set icon color */
+}
+
+.delete-icon {
+  cursor: pointer;
+}
+
+.delete-icon svg {
+  font-size: 18px;
+  color: black;
+}
+
+/* .top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 5px 10px;
+  background-color: #f5f5f5;
+  border-radius: 10px 10px 0 0;
+  font-size: 12px;
+}
+
+.download-data {
+  background-color: transparent;
+  color: #333;
+  padding: 0;
+  border-radius: 0;
+  display:flex;
+  align-items: center;
+}
+
+.download-data svg {
+  margin-left: 5px;
+  font-size: 14px;
+} */
+
+/* .delete-btn {
+  background-color: white;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+} */
+
+/* .delete-btn svg {
+  font-size: 18px;
+  color: black;
+} */
+
+/* .delete-btn {
+  background-color: #fff;
+  color: black;
+  border: none;
+  padding: 0;  */
+  /* cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: o;
+  right: 10px; */ 
+
+
+
+
+
+
+
