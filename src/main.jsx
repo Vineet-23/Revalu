@@ -32,7 +32,6 @@ const Main = ({ collections, onDelete, onNewCollection }) => {
     setShowForm(false)
   }
 
-  // Empty collection item component with "Add New Collection" button
   const EmptyCollectionItem = () => (
     <div className='collection-item empty-collection-item'>
       <div className='add-collection-window'>
