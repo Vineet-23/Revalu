@@ -10,7 +10,7 @@ const Sidebar = ({ onNewCollection }) => {
   const [showForm, setShowForm] = useState(false)
 
   const handleNewCollection = formData => {
-    onNewCollection(formData) // Call the function passed from App component
+    onNewCollection(formData) 
     setShowForm(false)
   }
 
